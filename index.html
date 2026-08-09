@@ -630,18 +630,71 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.82);padding:80px 5vw 3
         <p style="color:rgba(255,255,255,.65);margin-bottom:34px;">Answer six quick questions — we'll recommend the perfect hamper.</p>
         <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizFill"></div></div>
 
-        <div class="quiz-step active" data-step="1">
-          <span class="q-num">Question 1 of 6</span>
-          <h3>What's the occasion?</h3>
-          <div class="quiz-options" data-q="occasion">
-            <button class="quiz-option"><i class="fa-solid fa-cake-candles"></i> Birthday</button>
-            <button class="quiz-option"><i class="fa-solid fa-heart"></i> Anniversary</button>
-            <button class="quiz-option"><i class="fa-solid fa-rings-wedding"></i> Wedding</button>
-            <button class="quiz-option"><i class="fa-solid fa-baby"></i> Baby Shower</button>
-            <button class="quiz-option"><i class="fa-solid fa-briefcase"></i> Corporate</button>
-            <button class="quiz-option"><i class="fa-solid fa-ring"></i> Proposal</button>
-          </div>
-        </div>
+      ```html
+<div class="quiz-step active" data-step="1">
+  <span class="q-num">Question 1 of 6</span>
+
+  <h3>What's the occasion?</h3>
+
+  <div class="quiz-options" data-q="occasion">
+
+    <!-- Birthday -->
+    <button class="quiz-option" type="button">
+      <img src="m11.jpg" alt="Birthday gift">
+      <span class="option-label">
+        <i class="fa-solid fa-cake-candles"></i>
+        Birthday
+      </span>
+    </button>
+
+    <!-- Anniversary -->
+    <button class="quiz-option" type="button">
+      <img src="m1.jpg" alt="Anniversary gift">
+      <span class="option-label">
+        <i class="fa-solid fa-heart"></i>
+        Anniversary
+      </span>
+    </button>
+
+    <!-- Wedding -->
+    <button class="quiz-option" type="button">
+      <img src="m2.jpg" alt="Wedding gift">
+      <span class="option-label">
+        <i class="fa-solid fa-rings-wedding"></i>
+        Wedding
+      </span>
+    </button>
+
+    <!-- Baby Shower -->
+    <button class="quiz-option" type="button">
+      <img src="images/baby-shower.jpg" alt="Baby shower gift">
+      <span class="option-label">
+        <i class="fa-solid fa-baby"></i>
+        Baby Shower
+      </span>
+    </button>
+
+    <!-- Corporate -->
+    <button class="quiz-option" type="button">
+      <img src="images/corporate.jpg" alt="Corporate gift">
+      <span class="option-label">
+        <i class="fa-solid fa-briefcase"></i>
+        Corporate
+      </span>
+    </button>
+
+    <!-- Proposal -->
+    <button class="quiz-option" type="button">
+      <img src="images/proposal.jpg" alt="Proposal gift">
+      <span class="option-label">
+        <i class="fa-solid fa-ring"></i>
+        Proposal
+      </span>
+    </button>
+
+  </div>
+</div>
+```
 
         <div class="quiz-step" data-step="2">
           <span class="q-num">Question 2 of 6</span>
